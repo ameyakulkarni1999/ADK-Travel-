@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Wanderlust Travel</title>
+    <meta name="description" content="Explore our handpicked travel destinations around the world. From luxury escapes to adventure tours.">
+    <meta name="keywords" content="travel destinations, vacation packages, luxury travel, adventure travel, tours">
+    
+    <!-- Google Analytics Preparation -->
+    <meta name="google-analytics" content="tracking-ready">
+    <meta property="og:title" content="Travel Destinations - Wanderlust Travel">
+    <meta property="og:description" content="Discover amazing destinations and book your next adventure with expert travel planning.">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <h2>Wanderlust Travel</h2>
+                </a>
+            </div>
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="index.html" class="nav-link" data-ga-action="nav_click" data-ga-label="home">Home</a>
+                <a href="about.html" class="nav-link" data-ga-action="nav_click" data-ga-label="about">About</a>
+                <a href="destinations.html" class="nav-link active" data-ga-action="nav_click" data-ga-label="destinations">Destinations</a>
+                <a href="contact.html" class="nav-link" data-ga-action="nav_click" data-ga-label="contact">Contact</a>
+            </div>
+            <div class="navbar-toggle" id="navbarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Amazing Destinations</h1>
+                <p>Handpicked locations for extraordinary travel experiences</p>
+            </div>
+        </section>
+
+        <!-- Search and Filter -->
+        <section class="search-filter">
+            <div class="container">
+                <div class="filter-controls">
+                    <div class="search-box">
+                        <input type="text" id="destinationSearch" placeholder="Search destinations..." data-ga-action="search" data-ga-label="destination_search">
+                        <button type="button" id="searchBtn">🔍</button>
+                    </div>
+                    <div class="filter-options">
+                        <select id="continentFilter" data-ga-action="filter" data-ga-label="continent">
+                            <option value="">All Continents</option>
+                            <option value="europe">Europe</option>
+                            <option value="asia">Asia</option>
+                            <option value="africa">Africa</option>
+                            <option value="north-america">North America</option>
+                            <option value="south-america">South America</option>
+                            <option value="oceania">Oceania</option>
+                        </select>
+                        <select id="budgetFilter" data-ga-action="filter" data-ga-label="budget">
+                            <option value="">All Budgets</option>
+                            <option value="budget">Budget Friendly</option>
+                            <option value="mid-range">Mid-Range</option>
+                            <option value="luxury">Luxury</option>
+                        </select>
+                        <select id="typeFilter" data-ga-action="filter" data-ga-label="type">
+                            <option value="">All Types</option>
+                            <option value="beach">Beach</option>
+                            <option value="culture">Culture</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="city">City</option>
+                            <option value="nature">Nature</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinations Grid -->
+        <section class="destinations-grid-section">
+            <div class="container">
+                <div class="destinations-grid">
+                    <!-- Paris, France -->
+                    <div class="destination-card" data-continent="europe" data-budget="luxury" data-type="culture">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1502602898536-47ad22581b52?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Paris, France" />
+                            <div class="card-badge">Luxury</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Paris, France</h3>
+                            <p class="destination-type">Cultural Experience</p>
+                            <p class="destination-description">The city of love and lights, featuring iconic landmarks, world-class museums, and exquisite cuisine.</p>
+                            
+                            <div class="highlights">
+                                <h4>Highlights:</h4>
+                                <ul>
+                                    <li>Eiffel Tower & Arc de Triomphe</li>
+                                    <li>Louvre Museum & Musée d'Orsay</li>
+                                    <li>Seine River Cruise</li>
+                                    <li>Montmartre District</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="travel-info">
+                                <p><strong>Best Time:</strong> April-June, September-October</p>
+                                <p><strong>Duration:</strong> 7-10 days</p>
+                            </div>
+                            
+                            <div class="card-footer">
+                                <div class="price">
+                                    <span class="price-label">Starting from</span>
+                                    <span class="price-amount">$2,500</span>
+                                </div>
+                                <a href="contact.html" class="btn btn-primary" data-ga-action="destination_inquiry" data-ga-label="paris">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tokyo, Japan -->
+                    <div class="destination-card" data-continent="asia" data-budget="mid-range" data-type="culture">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Tokyo, Japan" />
+                            <div class="card-badge">Mid-Range</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Tokyo, Japan</h3>
+                            <p class="destination-type">Cultural Experience</p>
+                            <p class="destination-description">A fascinating blend of ancient traditions and cutting-edge technology in Japan's vibrant capital.</p>
+                            
+                            <div class="highlights">
+                                <h4>Highlights:</h4>
+                                <ul>
+                                    <li>Sensoji Temple & Traditional Districts</li>
+                                    <li>Shibuya Crossing Experience</li>
+                                    <li>Mount Fuji Day Trip</li>
+                                    <li>Traditional Ryokan Stay</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="travel-info">
+                                <p><strong>Best Time:</strong> March-May, September-November</p>
+                                <p><strong>Duration:</strong> 8-12 days</p>
+                            </div>
+                            
+                            <div class="card-footer">
+                                <div class="price">
+                                    <span class="price-label">Starting from</span>
+                                    <span class="price-amount">$2,800</span>
+                                </div>
+                                <a href="contact.html" class="btn btn-primary" data-ga-action="destination_inquiry" data-ga-label="tokyo">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bali, Indonesia -->
+                    <div class="destination-card" data-continent="asia" data-budget="budget" data-type="beach">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bali, Indonesia" />
+                            <div class="card-badge">Budget Friendly</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Bali, Indonesia</h3>
+                            <p class="destination-type">Beach Paradise</p>
+                            <p class="destination-description">Tropical paradise with stunning beaches, lush rice terraces, and rich cultural heritage.</p>
+                            
+                            <div class="highlights">
+                                <h4>Highlights:</h4>
+                                <ul>
+                                    <li>Ubud Rice Terraces & Monkey Forest</li>
+                                    <li>Beach Clubs in Seminyak</li>
+                                    <li>Traditional Temple Hopping</li>
+                                    <li>Mount Batur Sunrise Trek</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="travel-info">
+                                <p><strong>Best Time:</strong> April-October (dry season)</p>
+                                <p><strong>Duration:</strong> 7-14 days</p>
+                            </div>
+                            
+                            <div class="card-footer">
+                                <div class="price">
+                                    <span class="price-label">Starting from</span>
+                                    <span class="price-amount">$1,200</span>
+                                </div>
+                                <a href="contact.html" class="btn btn-primary" data-ga-action="destination_inquiry" data-ga-label="bali">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New York, USA -->
+                    <div class="destination-card" data-continent="north-america" data-budget="luxury" data-type="city">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="New York, USA" />
+                            <div class="card-badge">Luxury</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>New York, USA</h3>
+                            <p class="destination-type">Urban Adventure</p>
+                            <p class="destination-description">The city that never sleeps, offering Broadway shows, world-class shopping, and iconic skylines.</p>
+                            
+                            <div class="highlights">
+                                <h4>Highlights:</h4>
+                                <ul>
+                                    <li>Statue of Liberty & Ellis Island</li>
+                                    <li>Central Park & Times Square</li>
+                                    <li>Broadway Shows & Museums</li>
+                                    <li>Empire State Building Views</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="travel-info">
+                                <p><strong>Best Time:</strong> April-June, September-November</p>
+                                <p><strong>Duration:</strong> 5-7 days</p>
+                            </div>
+                            
+                            <div class="card-footer">
+                                <div class="price">
+                                    <span class="price-label">Starting from</span>
+                                    <span class="price-amount">$2,200</span>
+                                </div>
+                                <a href="contact.html" class="btn btn-primary" data-ga-action="destination_inquiry" data-ga-label="newyork">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Iceland -->
+                    <div class="destination-card" data-continent="europe" data-budget="mid-range" data-type="adventure">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1539066336863-e635ce5fe5fe?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Iceland" />
+                            <div class="card-badge">Adventure</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Iceland</h3>
+                            <p class="destination-type">Nature Adventure</p>
+                            <p class="destination-description">Land of fire and ice, featuring dramatic landscapes, Northern Lights, and geothermal wonders.</p>
+                            
+                            <div class="highlights">
+                                <h4>Highlights:</h4>
+                                <ul>
+                                    <li>Blue Lagoon Geothermal Spa</li>
+                                    <li>Northern Lights Viewing</li>
+                                    <li>Golden Circle Route</li>
+                                    <li>Glacier Hiking & Ice Caves</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="travel-info">
+                                <p><strong>Best Time:</strong> June-August (summer), September-March (Northern Lights)</p>
+                                <p><strong>Duration:</strong> 7-10 days</p>
+                            </div>
+                            
+                            <div class="card-footer">
+                                <div class="price">
+                                    <span class="price-label">Starting from</span>
+                                    <span class="price-amount">$2,000</span>
+                                </div>
+                                <a href="contact.html" class="btn btn-primary" data-ga-action="destination_inquiry" data-ga-label="iceland">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kenya Safari -->
+                    <div class="destination-card" data-continent="africa" data-budget="luxury" data-type="adventure">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Kenya Safari" />
+                            <div class="card-badge">Luxury Safari</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Kenya Safari</h3>
+                            <p class="destination-type">Wildlife Adventure</p>
+                            <p class="destination-description">Ultimate safari experience with the Big Five, Great Migration, and authentic cultural encounters.</p>
+                            
+                            <div class="highlights">
+                                <h4>Highlights:</h4>
+                                <ul>
+                                    <li>Masai Mara National Reserve</li>
+                                    <li>Great Migration Witnessing</li>
+                                    <li>Big Five Safari Experience</li>
+                                    <li>Maasai Village Cultural Visit</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="travel-info">
+                                <p><strong>Best Time:</strong> July-October (Great Migration)</p>
+                                <p><strong>Duration:</strong> 8-12 days</p>
+                            </div>
+                            
+                            <div class="card-footer">
+                                <div class="price">
+                                    <span class="price-label">Starting from</span>
+                                    <span class="price-amount">$3,500</span>
+                                </div>
+                                <a href="contact.html" class="btn btn-primary" data-ga-action="destination_inquiry" data-ga-label="kenya">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Don't See Your Dream Destination?</h2>
+                    <p>We specialize in creating custom travel experiences worldwide</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg" data-ga-action="cta_click" data-ga-label="custom_trip">Plan Custom Trip</a>
+                        <a href="about.html" class="btn btn-secondary btn-lg" data-ga-action="cta_click" data-ga-label="learn_more">Learn More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Wanderlust Travel</h3>
+                    <p>Your gateway to amazing adventures around the world. Creating unforgettable memories since 2010.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📧 info@wanderlusttravel.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Adventure St, Travel City, TC 12345</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" data-ga-action="social_click" data-ga-label="facebook">Facebook</a>
+                        <a href="#" data-ga-action="social_click" data-ga-label="instagram">Instagram</a>
+                        <a href="#" data-ga-action="social_click" data-ga-label="twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wanderlust Travel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

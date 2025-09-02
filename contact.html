@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wanderlust Travel</title>
+    <meta name="description" content="Get in touch with Wanderlust Travel to plan your next adventure. Contact our expert travel consultants today.">
+    <meta name="keywords" content="contact travel agency, travel consultation, book trip, travel planning">
+    
+    <!-- Google Analytics Preparation -->
+    <meta name="google-analytics" content="tracking-ready">
+    <meta property="og:title" content="Contact Us - Wanderlust Travel">
+    <meta property="og:description" content="Ready to plan your next adventure? Contact our expert travel team today for personalized service.">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <h2>Wanderlust Travel</h2>
+                </a>
+            </div>
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="index.html" class="nav-link" data-ga-action="nav_click" data-ga-label="home">Home</a>
+                <a href="about.html" class="nav-link" data-ga-action="nav_click" data-ga-label="about">About</a>
+                <a href="destinations.html" class="nav-link" data-ga-action="nav_click" data-ga-label="destinations">Destinations</a>
+                <a href="contact.html" class="nav-link active" data-ga-action="nav_click" data-ga-label="contact">Contact</a>
+            </div>
+            <div class="navbar-toggle" id="navbarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Ready to plan your next adventure? Let's make it happen together</p>
+            </div>
+        </section>
+
+        <!-- Contact Form & Info -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <h2>Plan Your Trip</h2>
+                        <p>Fill out the form below and our travel experts will get back to you within 24 hours.</p>
+                        
+                        <form class="contact-form" id="contactForm" data-ga-action="form_submit" data-ga-label="contact_form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="destination">Preferred Destination</label>
+                                    <select id="destination" name="destination" data-ga-action="form_field" data-ga-label="destination_select">
+                                        <option value="">Select a destination</option>
+                                        <option value="paris">Paris, France</option>
+                                        <option value="tokyo">Tokyo, Japan</option>
+                                        <option value="bali">Bali, Indonesia</option>
+                                        <option value="newyork">New York, USA</option>
+                                        <option value="iceland">Iceland</option>
+                                        <option value="kenya">Kenya Safari</option>
+                                        <option value="custom">Other / Custom Destination</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="budget">Budget Range (USD)</label>
+                                    <select id="budget" name="budget" data-ga-action="form_field" data-ga-label="budget_select">
+                                        <option value="">Select budget range</option>
+                                        <option value="under-2000">Under $2,000</option>
+                                        <option value="2000-5000">$2,000 - $5,000</option>
+                                        <option value="5000-10000">$5,000 - $10,000</option>
+                                        <option value="10000-20000">$10,000 - $20,000</option>
+                                        <option value="over-20000">Over $20,000</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="travelDates">Preferred Travel Dates</label>
+                                    <input type="text" id="travelDates" name="travelDates" placeholder="e.g., March 2025 or flexible">
+                                </div>
+                                <div class="form-group">
+                                    <label for="groupSize">Number of Travelers</label>
+                                    <select id="groupSize" name="groupSize" data-ga-action="form_field" data-ga-label="group_size">
+                                        <option value="">Select group size</option>
+                                        <option value="1">Just me (1)</option>
+                                        <option value="2">Couple (2)</option>
+                                        <option value="3-4">Small group (3-4)</option>
+                                        <option value="5-8">Family/friends (5-8)</option>
+                                        <option value="9+">Large group (9+)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="travelStyle">Travel Style Preferences</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="travelStyle" value="luxury"> Luxury accommodations
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="travelStyle" value="adventure"> Adventure activities
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="travelStyle" value="culture"> Cultural experiences
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="travelStyle" value="relaxation"> Relaxation & spa
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="travelStyle" value="food"> Food & wine tours
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="travelStyle" value="photography"> Photography tours
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="specialRequests">Special Requests or Requirements</label>
+                                <textarea id="specialRequests" name="specialRequests" rows="5" placeholder="Tell us about any special occasions, dietary restrictions, accessibility needs, or specific interests..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" value="yes"> I'd like to receive travel tips and special offers via email
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg" data-ga-action="form_submit" data-ga-label="submit_inquiry">Send Inquiry</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3>Email Us</h3>
+                                <p>info@wanderlusttravel.com</p>
+                                <small>We respond within 24 hours</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h3>Call Us</h3>
+                                <p>+1 (555) 123-4567</p>
+                                <small>Mon-Fri: 9AM-6PM EST<br>Sat: 10AM-4PM EST</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h3>Visit Our Office</h3>
+                                <p>123 Adventure Street<br>Travel City, TC 12345<br>United States</p>
+                                <small>By appointment only</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">🌐</div>
+                            <div class="contact-details">
+                                <h3>Follow Us</h3>
+                                <div class="social-links">
+                                    <a href="#" data-ga-action="social_click" data-ga-label="facebook_contact">Facebook</a>
+                                    <a href="#" data-ga-action="social_click" data-ga-label="instagram_contact">Instagram</a>
+                                    <a href="#" data-ga-action="social_click" data-ga-label="twitter_contact">Twitter</a>
+                                </div>
+                                <small>Get travel inspiration & tips</small>
+                            </div>
+                        </div>
+                        
+                        <!-- Emergency Contact -->
+                        <div class="emergency-contact">
+                            <h3>24/7 Emergency Support</h3>
+                            <p>For travelers currently on trips:</p>
+                            <p><strong>+1 (555) 999-HELP</strong></p>
+                            <small>Available 24/7 for urgent assistance during your travels</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <h2>Find Our Office</h2>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Office location map" />
+                        <div class="map-overlay">
+                            <p>📍 123 Adventure Street, Travel City, TC 12345</p>
+                            <p>Located in the heart of downtown, easily accessible by public transport</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>How far in advance should I book my trip?</h3>
+                        <p>We recommend booking 3-6 months in advance for international trips, especially during peak seasons. However, we can also help with last-minute bookings based on availability.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Do you handle visa applications?</h3>
+                        <p>Yes! We provide guidance on visa requirements and can assist with the application process for most destinations. We'll ensure you have all necessary documentation.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>What's included in your travel packages?</h3>
+                        <p>Our packages typically include accommodations, transportation, guided tours, and some meals. Each package is customized based on your preferences and budget.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Do you offer travel insurance?</h3>
+                        <p>Absolutely! We strongly recommend travel insurance and can help you choose the right coverage for your trip, including medical, cancellation, and baggage protection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Wanderlust Travel</h3>
+                    <p>Your gateway to amazing adventures around the world. Creating unforgettable memories since 2010.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📧 info@wanderlusttravel.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Adventure St, Travel City, TC 12345</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" data-ga-action="social_click" data-ga-label="facebook">Facebook</a>
+                        <a href="#" data-ga-action="social_click" data-ga-label="instagram">Instagram</a>
+                        <a href="#" data-ga-action="social_click" data-ga-label="twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wanderlust Travel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
